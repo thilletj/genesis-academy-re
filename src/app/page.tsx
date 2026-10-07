@@ -178,7 +178,7 @@ export default function AcademyLandingPage() {
                 {item.icon}
               </div>
               <h5 className="font-black text-slate-900 text-xs uppercase tracking-tighter mb-1">{item.title}</h5>
-              <p className="text-slate-500 text-[10px] font-bold uppercase leading-tight">{item.//C-C-S_C-S_S-P</p>
+              <p className="text-slate-500 text-[10px] font-bold uppercase leading-tight">{item.detail}</p>
             </div>
           ))}
         </div>
