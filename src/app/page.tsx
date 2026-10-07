@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Calendar, Clock, CheckCircle, BookOpen, Monitor, HelpCircle, Headphones, ArrowRight } from 'lucide-react';
+import { Phone, Calendar, Clock, CheckCircle, BookOpen, Monitor, HelpCircle, Headphones, ArrowRight, User, Globe } from 'lucide-react';
 
 export default function AcademyLandingPage() {
   return (
