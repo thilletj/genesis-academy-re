@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Phone, Calendar, Clock, CheckCircle, BookOpen, Monitor, HelpCircle, Headphones, ArrowRight, User, Globe } from 'lucide-react';
 import Image from 'next/image';
@@ -130,7 +132,6 @@ export default function AcademyLandingPage() {
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
           <div className="bg-yellow-400 lg:w-2/3 p-10 lg:p-20 text-slate-900 flex flex-col justify-center items-center text-center relative overflow-hidden">
-            {/* Integrating image 8804.png as a subtle background pattern if available */}
             <div className="absolute inset-0 opacity-10 pointer-events-none">
                <Image src="/8804.png" alt="" fill className="object-cover" />
             </div>
