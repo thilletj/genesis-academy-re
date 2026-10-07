@@ -1,7 +1,6 @@
-"use client";
-
 import React from 'react';
 import { Phone, Calendar, Clock, CheckCircle, BookOpen, Monitor, HelpCircle, Headphones, ArrowRight, User, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AcademyLandingPage() {
   return (
@@ -36,7 +35,7 @@ export default function AcademyLandingPage() {
         </div>
       </nav>
 
-      {/* Hero Section - Mirroring the Flyer Layout */}
+      {/* Hero Section - Integrating the flyer image (10888.png) */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
           <div className="inline-block px-4 py-1 bg-slate-100 text-slate-600 text-xs font-black uppercase tracking-widest mb-4 border-l-4 border-yellow-400">
@@ -64,13 +63,15 @@ export default function AcademyLandingPage() {
           </div>
         </div>
         <div className="order-1 lg:order-2 relative">
-          {/* Profile Image Placeholder - Mirroring the Flyer's Man in Suit */}
           <div className="relative z-10 aspect-[4/5] bg-slate-200 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-             <div className="w-full h-full flex items-center justify-center text-slate-400 bg-slate-100">
-                <User className="w-32 h-32 opacity-20" />
-             </div>
+             <Image
+               src="/10888.png"
+               alt="Genesis Academy Representative"
+               fill
+               className="object-cover"
+               priority
+             />
           </div>
-          {/* Background Gold Accent */}
           <div className="absolute -top-10 -right-10 w-64 h-64 bg-yellow-400 rounded-full blur-3xl opacity-20 -z-10" />
           <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-yellow-400 rounded-full blur-3xl opacity-20 -z-10" />
         </div>
@@ -80,8 +81,9 @@ export default function AcademyLandingPage() {
       <section id="schedule" className="py-20 bg-slate-50 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-black text-slate-900 mb-8 uppercase tracking-tight">Course Schedule</h2>
+            <div className="relative">
+              <div className="absolute -left-12 top-0 w-1 h-full bg-yellow-400 opacity-20 hidden lg:block" />
+              <h2 className="text-4xl font-black text-slate-900 mb-8 uppercase tracking-tight relative z-10">Course Schedule</h2>
               <div className="space-y-6">
                 {[
                   { icon: <Calendar className="w-6 h-6" />, title: "Starts", detail: "Monday, November 2nd" },
@@ -93,7 +95,7 @@ export default function AcademyLandingPage() {
                     <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center text-slate-900 shrink-0">
                       {item.icon}
                     </div>
-                    <div>
+                    <div className="flex flex-col justify-center">
                       <h4 className="font-black text-slate-900 uppercase text-sm tracking-wider">{item.title}</h4>
                       <p className="text-slate-600 font-medium">{item.detail}</p>
                     </div>
@@ -124,19 +126,23 @@ export default function AcademyLandingPage() {
         </div>
       </section>
 
-      {/* Pricing Section - High Contrast like the Flyer */}
+      {/* Pricing Section - Mirroring the Flyer's Layout */}
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
-          <div className="bg-yellow-400 lg:w-2/3 p-10 lg:p-20 text-slate-900 flex flex-col justify-center items-center text-center">
-            <span className="font-black uppercase tracking-widest text-sm mb-4">Special limited price</span>
-            <div className="flex items-baseline gap-4 mb-4">
+          <div className="bg-yellow-400 lg:w-2/3 p-10 lg:p-20 text-slate-900 flex flex-col justify-center items-center text-center relative overflow-hidden">
+            {/* Integrating image 8804.png as a subtle background pattern if available */}
+            <div className="absolute inset-0 opacity-10 pointer-events-none">
+               <Image src="/8804.png" alt="" fill className="object-cover" />
+            </div>
+            <span className="relative z-10 font-black uppercase tracking-widest text-sm mb-4">Special limited price</span>
+            <div className="relative z-10 flex items-baseline gap-4 mb-4">
               <span className="text-7xl md:text-9xl font-black tracking-tighter">$200</span>
               <div className="flex flex-col text-right">
                 <span className="text-slate-600 line-through font-bold text-xl">$300</span>
                 <span className="font-black text-xs uppercase">Regular Price</span>
               </div>
             </div>
-            <p className="font-bold text-lg max-w-md mx-auto opacity-80">
+            <p className="relative z-10 font-bold text-lg max-w-md mx-auto opacity-80">
               Get licensed for a fraction of the cost without sacrificing quality.
             </p>
           </div>
