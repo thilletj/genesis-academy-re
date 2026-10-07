@@ -37,7 +37,7 @@ export default function AcademyLandingPage() {
         </div>
       </nav>
 
-      {/* Hero Section - Integrating the flyer image (10888.png) */}
+      {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
           <div className="inline-block px-4 py-1 bg-slate-100 text-slate-600 text-xs font-black uppercase tracking-widest mb-4 border-l-4 border-yellow-400">
@@ -128,7 +128,7 @@ export default function AcademyLandingPage() {
         </div>
       </section>
 
-      {/* Pricing Section - Mirroring the Flyer's Layout */}
+      {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
           <div className="bg-yellow-400 lg:w-2/3 p-10 lg:p-20 text-slate-900 flex flex-col justify-center items-center text-center relative overflow-hidden">
@@ -164,7 +164,7 @@ export default function AcademyLandingPage() {
         </div>
       </section>
 
-      {/* Feature Grid - Mirroring the bottom strip of the flyer */}
+      {/* Feature Grid */}
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
@@ -178,13 +178,13 @@ export default function AcademyLandingPage() {
                 {item.icon}
               </div>
               <h5 className="font-black text-slate-900 text-xs uppercase tracking-tighter mb-1">{item.title}</h5>
-              <p className="text-slate-500 text-[10px] font-bold uppercase leading-tight">{item.detail}</p>
+              <p className="text-slate-500 text-[10px] font-bold uppercase leading-tight">{item.//C-C-S_C-S_S-P</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Call to Action Footer - Direct mirror of the Flyer's gold bar */}
+      {/* Call to Action Footer */}
       <section className="sticky bottom-0 w-full z-40 bg-yellow-400 py-6 px-4 shadow-2xl border-t-4 border-yellow-600">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 text-slate-900">
           <div className="flex items-center gap-3">
