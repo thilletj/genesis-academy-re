@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Phone, Calendar, Clock, CheckCircle, BookOpen, Monitor, HelpCircle, Headphones, ArrowRight, User, Globe } from 'lucide-react';
 
